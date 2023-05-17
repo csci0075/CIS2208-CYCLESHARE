@@ -21,10 +21,10 @@
         app:layout_constraintVertical_bias="0.94" />
 
     <TextView
-        android:id="@+id/Greeting"
+        android:id="@+id/Hello"
         android:layout_width="393dp"
         android:layout_height="93dp"
-        android:text="{ Greeting }"
+        android:text="Hello!"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
