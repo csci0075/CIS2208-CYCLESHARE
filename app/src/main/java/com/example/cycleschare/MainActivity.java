@@ -30,9 +30,18 @@ public class MainActivity extends AppCompatActivity {
             Greeting.setText("Good Night");
         }
 
+        Button begin_tutorial_button = findViewById(R.id.begin_tutorial_button);
+        begin_tutorial_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FirstTutorialPageActivity.class));
+            }
+        });
+
+
         //Backend of 'Begin' button to go to next activity
-        Button btn = (Button) findViewById(R.id.begin_button);
-        btn.setOnClickListener(new View.OnClickListener(){
+        Button goto_authentication_button = findViewById(R.id.goto_authentication_button);
+        goto_authentication_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MainActivity.this, AuthActivity.class));
             }

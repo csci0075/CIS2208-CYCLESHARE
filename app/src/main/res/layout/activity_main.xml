@@ -6,13 +6,28 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+
     <Button
-        android:id="@+id/begin_button"
+        android:id="@+id/begin_tutorial_button"
         android:layout_width="295dp"
         android:layout_height="54dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
-        android:text="BEGIN                                                  >"
+        android:text="BEGIN  TUTORIAL                               >"
+        app:iconTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/goto_authentication_button"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:text="LOG ON OR REGISTER                        >"
         app:iconTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,13 +67,14 @@
         android:id="@+id/tc"
         android:layout_width="373dp"
         android:layout_height="39dp"
+        android:layout_marginTop="156dp"
         android:text="by tapping begin, you agree to abide by proper use of the app."
         android:textAllCaps="true"
-        app:layout_constraintBottom_toTopOf="@+id/begin_button"
+        app:layout_constraintBottom_toTopOf="@+id/begin_tutorial_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intro"
-        app:layout_constraintVertical_bias="0.947" />
+        app:layout_constraintVertical_bias="0.444" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
