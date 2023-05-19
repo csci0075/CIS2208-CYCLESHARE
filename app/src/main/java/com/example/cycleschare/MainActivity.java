@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             Greeting.setText("Good Night");
         }
 
+        // ON CLICK: Redirect to Tutorial
         Button begin_tutorial_button = findViewById(R.id.begin_tutorial_button);
         begin_tutorial_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        //Backend of 'Begin' button to go to next activity
+        // ON CLICK: Redirect to Authentication Menu to Log In or Register
         Button goto_authentication_button = findViewById(R.id.goto_authentication_button);
         goto_authentication_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

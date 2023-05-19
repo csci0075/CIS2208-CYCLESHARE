@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".FirstTutorialPageActivity">
 
+    <TextView
+        android:id="@+id/PageTitle"
+        android:layout_width="393dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="68dp"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="30sp"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <TextView
+        android:id="@+id/PageBodyTextOne"
+        android:layout_width="393dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="192dp"
+        android:text="The home app is your one-stop place for finding a bike to rent."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PageBodyTextTwo"
+        android:layout_width="393dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="284dp"
+        android:textColor="#FFA500"
+        android:text="See the prices via the pricing page."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

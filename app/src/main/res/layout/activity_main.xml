@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/goto_authentication_button"
@@ -33,15 +33,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/Greeting"
         android:layout_width="393dp"
         android:layout_height="70dp"
-        android:text="Hello!"
+        android:text="WELCOME"
         android:textAlignment="center"
-        android:textAllCaps="false"
+        android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="30sp"
         android:textStyle=""
@@ -55,7 +55,9 @@
         android:id="@+id/intro"
         android:layout_width="354dp"
         android:layout_height="38dp"
-        android:text="Welcome! You will be given a quick walkthrough on the app's main features."
+        android:text="BY TAPPING ANY OF THE BUTTONS AT THE BOTTOM, YOU AGREE TO ABIDE BY PROPER USE OF THE APP."
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -63,18 +65,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.178" />
 
-    <TextView
-        android:id="@+id/tc"
-        android:layout_width="373dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="156dp"
-        android:text="by tapping begin, you agree to abide by proper use of the app."
-        android:textAllCaps="true"
-        app:layout_constraintBottom_toTopOf="@+id/begin_tutorial_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intro"
-        app:layout_constraintVertical_bias="0.444" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
