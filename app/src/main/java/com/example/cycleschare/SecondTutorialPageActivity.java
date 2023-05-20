@@ -1,48 +1,46 @@
 package com.example.cycleschare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.os.Bundle;
 import android.widget.TextView;
 
-public class FirstTutorialPageActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SecondTutorialPageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_tutorial_page);
+        setContentView(R.layout.activity_second_tutorial_page);
 
-        // ON CLICK: Go back to start page
+        // ON CLICK: Go back to first tutorial page
         Button return_button = findViewById(R.id.return_button);
         return_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FirstTutorialPageActivity.this, MainActivity.class));
+                startActivity(new Intent(SecondTutorialPageActivity.this, FirstTutorialPageActivity.class));
             }
         });
 
         TextView PageTitle = findViewById(R.id.PageTitle);
 
         TextView EmojiOne = findViewById(R.id.PageBodyEmojiOne);
-        EmojiOne.setText("\uD83D\uDEB2"); // Sets text to bike emoji
+        EmojiOne.setText("\uD83D\uDCB6"); // Sets text to Euro emoji
 
         TextView EmojiTwo = findViewById(R.id.PageBodyEmojiTwo);
-        EmojiTwo.setText("\uD83D\uDDFA"); // Sets text to map emoji
+        EmojiTwo.setText("\u2753"); // Sets text to Question emoji
 
         TextView BodyTextOne = findViewById(R.id.PageBodyTextOne);
         TextView BodyTextTwo = findViewById(R.id.PageBodyTextTwo);
 
-        TextView PricingText = findViewById(R.id.PageBodyTextThree);
-
-        // ON CLICK: Continue Tutorial
-        Button continue_button = findViewById(R.id.continue_button);
-        continue_button.setOnClickListener(new View.OnClickListener() {
+        // ON CLICK: Redirect to Authentication Menu to Log In or Register
+        Button continue_tutorial_button = findViewById(R.id.continue_button);
+        continue_tutorial_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FirstTutorialPageActivity.this, SecondTutorialPageActivity.class));
+                startActivity(new Intent(SecondTutorialPageActivity.this, AuthActivity.class));
             }
         });
     }

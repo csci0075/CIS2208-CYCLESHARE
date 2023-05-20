@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CYCLESCHARE"
         tools:targetApi="31">
         <activity
+            android:name=".SecondTutorialPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".FirstTutorialPageActivity"
             android:exported="false" />
         <activity
