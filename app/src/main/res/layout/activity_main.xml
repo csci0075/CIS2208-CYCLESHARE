@@ -10,9 +10,9 @@
     <Button
         android:id="@+id/begin_tutorial_button"
         android:layout_width="295dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginEnd="64dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
         android:text="BEGIN  TUTORIAL                               >"
         app:iconTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +24,7 @@
     <Button
         android:id="@+id/goto_authentication_button"
         android:layout_width="295dp"
-        android:layout_height="54dp"
+        android:layout_height="55dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         android:text="LOG ON OR REGISTER                        >"
