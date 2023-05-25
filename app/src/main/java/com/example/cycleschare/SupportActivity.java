@@ -17,7 +17,7 @@ public class SupportActivity extends AppCompatActivity {
 
         Button viewPricing = findViewById(R.id.show_pricing);
 
-        // ON CLICK: open the home page/pane
+        // ON CLICK: Open the home page/pane
         viewPricing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
