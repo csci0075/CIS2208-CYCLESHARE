@@ -27,12 +27,21 @@ public class SupportActivity extends AppCompatActivity {
         });
 
         // ON CLICK: Open the home page/pane
-        viewPricing.setOnClickListener(new View.OnClickListener() {
+        viewHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SupportActivity.this, FindLocationsActivity.class));
             }
         });
+
+        Button submitButton = findViewById(R.id.request_support);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View vw) {
+                submitEmail(vw);
+            }
+        });
+
     }
     public void submitEmail(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
