@@ -14,13 +14,13 @@
         android:theme="@style/Theme.CYCLESCHARE"
         tools:targetApi="31">
         <activity
+            android:name=".FindLocationsActivity"
+            android:exported="false"/>
+        <activity
             android:name=".PricingActivity"
             android:exported="false" />
         <activity
             android:name=".SupportActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LocationsActivity"
             android:exported="false" />
         <activity
             android:name=".SecondTutorialPageActivity"

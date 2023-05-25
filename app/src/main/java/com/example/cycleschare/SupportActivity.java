@@ -16,13 +16,21 @@ public class SupportActivity extends AppCompatActivity {
         setContentView(R.layout.activity_support);
 
         Button viewPricing = findViewById(R.id.show_pricing);
+        Button viewHome = findViewById(R.id.open_home);
+
+        // ON CLICK: Open the pricing page/pane
+        viewPricing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SupportActivity.this, PricingActivity.class));
+            }
+        });
 
         // ON CLICK: Open the home page/pane
         viewPricing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SupportActivity.this, FindLocationsActivity.class));
-
             }
         });
     }
@@ -34,6 +42,5 @@ public class SupportActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
-
 }
 
