@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Button goto_authentication_button = findViewById(R.id.goto_authentication_button);
         goto_authentication_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, AuthActivity.class));
+                startActivity(new Intent(MainActivity.this, FindLocationsActivity.class));
             }
         });
     }

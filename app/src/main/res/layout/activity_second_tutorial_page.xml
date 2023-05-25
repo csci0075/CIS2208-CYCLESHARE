@@ -39,23 +39,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/PageTitleBotBorder"
-        android:layout_width="200dp"
-        android:layout_height="5dp"
-        android:layout_marginTop="60dp"
-        android:background="#134F4B"
-        android:text=""
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="30sp"
-        android:textStyle=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/PageBodyTextOne"
         android:layout_width="300dp"
         android:layout_height="50dp"

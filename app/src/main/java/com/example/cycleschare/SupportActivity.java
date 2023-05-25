@@ -21,16 +21,15 @@ public class SupportActivity extends AppCompatActivity {
         viewPricing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SupportActivity.this, LocationsActivity.class));
+                startActivity(new Intent(SupportActivity.this, FindLocationsActivity.class));
 
             }
         });
     }
     public void submitEmail(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("mailto:clyde.sciberras.21@um.edu.mt")); // Replace with the desired email address
+        intent.setData(Uri.parse("mailto:clyde.sciberras.21@um.edu.mt"));
         intent.putExtra(Intent.EXTRA_SUBJECT, "SUPPORT REQUEST | CYCLESHARE ");
-
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
