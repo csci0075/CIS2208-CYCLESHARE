@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SupportActivity extends AppCompatActivity {
+public class PricingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class SupportActivity extends AppCompatActivity {
         viewPricing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SupportActivity.this, LocationsActivity.class));
+                startActivity(new Intent(PricingActivity.this, LocationsActivity.class));
 
             }
         });
