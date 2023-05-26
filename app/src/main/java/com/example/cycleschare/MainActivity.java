@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // [1] Greeting tutorial 1 used: https://www.youtube.com/watch?v=MLOFlaGqhAY ;
+        // [2] Greeting tutorial 2 user: https://www.youtube.com/watch?v=yb6Qn3fkG64
         TextView Greeting = findViewById(R.id.Greeting);
 
         int currentTime = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);

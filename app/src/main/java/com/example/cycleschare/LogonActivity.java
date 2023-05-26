@@ -19,6 +19,11 @@ public class LogonActivity extends AppCompatActivity {
 
     DBHP dbHP;
 
+    // [3] Database tutorial 1 used: https://developer.android.com/training/data-storage/sqlite
+    // [4] Database tutorial 2 used: https://ieeexplore.ieee.org/abstract/document/8861977
+    // [5] Database tutorial 3 used: https://www.vogella.com/tutorials/AndroidSQLite/article.html
+    // [6] Database tutorial 4 used: https://www.tutorialspoint.com/android/android_sqlite_database.htm
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
