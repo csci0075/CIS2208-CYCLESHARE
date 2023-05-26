@@ -68,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
         // ON CLICK: Redirect to Registration Page
         goToLogon.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(RegisterActivity.this, RegisterActivity.class));
+                startActivity(new Intent(RegisterActivity.this, LogonActivity.class));
             }
         });
     }
