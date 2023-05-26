@@ -14,15 +14,18 @@ public class AuthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
 
-        //Backend of buttons to go to next activity
+
         Button btn1 = (Button) findViewById(R.id.log_on_button);
         Button btn2 = (Button) findViewById(R.id.register_button);
+
+        // ON CLICK: Redirect to logon page
         btn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(AuthActivity.this, LogonActivity.class));
             }
         });
 
+        // ON CLICK: Red
         btn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(AuthActivity.this, RegisterActivity.class));
