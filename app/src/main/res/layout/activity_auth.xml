@@ -13,6 +13,7 @@
         android:layout_height="93dp"
         android:text="AUTHENTICATION"
         android:textAlignment="center"
+        android:gravity="center_vertical"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="35sp"
@@ -25,9 +26,10 @@
 
     <TextView
         android:id="@+id/intro"
-        android:layout_width="354dp"
-        android:layout_height="38dp"
-        android:text="Please select an authentication method from the following:"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:text="Please select an authentication method from the below"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

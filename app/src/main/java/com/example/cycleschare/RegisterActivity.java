@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         usernameEditText = findViewById(R.id.username_edittext);
         passwordEditText = findViewById(R.id.password_edittext);
         confirmPasswordEditText = findViewById(R.id.confirm_password_edittext);
-        register_button = findViewById(R.id.register_button);
+        register_button = findViewById(R.id.self_register_button);
 
         register_button.setOnClickListener(new View.OnClickListener() {
             @Override

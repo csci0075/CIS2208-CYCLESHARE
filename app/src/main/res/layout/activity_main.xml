@@ -41,6 +41,7 @@
         android:layout_height="70dp"
         android:text="WELCOME"
         android:textAlignment="center"
+        android:gravity="center_vertical"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="30sp"
