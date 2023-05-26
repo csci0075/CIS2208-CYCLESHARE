@@ -24,13 +24,13 @@
         android:id="@+id/username_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"/>
+        android:hint="ENTER USERNAME"/>
 
     <EditText
         android:id="@+id/password_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="ENTER PASSWORD"
         android:inputType="textPassword"
         android:layout_marginTop="16dp"/>
 
