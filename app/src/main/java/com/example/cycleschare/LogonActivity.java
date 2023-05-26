@@ -27,8 +27,8 @@ public class LogonActivity extends AppCompatActivity {
 
         dbHP = new DBHP(this);
 
-        usernameEditText = findViewById(R.id.username_edittext);
-        passwordEditText = findViewById(R.id.password_edittext);
+        usernameEditText = findViewById(R.id.username_input);
+        passwordEditText = findViewById(R.id.password_input);
         Button logon_button = findViewById(R.id.logon_button);
 
         logon_button.setOnClickListener(new View.OnClickListener() {

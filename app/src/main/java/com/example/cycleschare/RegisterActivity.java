@@ -27,9 +27,9 @@ public class RegisterActivity extends AppCompatActivity {
 
         dbHP = new DBHP(this);
 
-        usernameEditText = findViewById(R.id.username_edittext);
-        passwordEditText = findViewById(R.id.password_edittext);
-        confirmPasswordEditText = findViewById(R.id.confirm_password_edittext);
+        usernameEditText = findViewById(R.id.username_input);
+        passwordEditText = findViewById(R.id.password_input);
+        confirmPasswordEditText = findViewById(R.id.confirm_password_input);
         register_button = findViewById(R.id.self_register_button);
 
         register_button.setOnClickListener(new View.OnClickListener() {

@@ -22,13 +22,13 @@
         android:layout_marginBottom="50dp"/>
 
     <EditText
-        android:id="@+id/username_edittext"
+        android:id="@+id/username_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="ENTER NEW USERNAME"/>
 
     <EditText
-        android:id="@+id/password_edittext"
+        android:id="@+id/password_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="ENTER NEW PASSWORD"
@@ -36,7 +36,7 @@
         android:layout_marginTop="16dp"/>
 
     <EditText
-        android:id="@+id/confirm_password_edittext"
+        android:id="@+id/confirm_password_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="CONFIRM NEW PASSWORD"
