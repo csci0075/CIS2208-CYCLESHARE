@@ -8,14 +8,14 @@
     tools:context=".AuthActivity">
 
     <TextView
-        android:id="@+id/Hello"
+        android:id="@+id/PageTitle"
         android:layout_width="393dp"
         android:layout_height="93dp"
         android:text="AUTHENTICATION"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="45sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/intro"
         app:layout_constraintEnd_toEndOf="parent"

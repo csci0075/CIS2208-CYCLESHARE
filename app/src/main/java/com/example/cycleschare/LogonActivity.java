@@ -1,6 +1,9 @@
 package com.example.cycleschare;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,11 +17,15 @@ public class LogonActivity extends AppCompatActivity {
     private EditText usernameEditText;
     private EditText passwordEditText;
 
+    DBHP dbHP;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logon);
+
+        dbHP = new DBHP(this);
 
         usernameEditText = findViewById(R.id.username_edittext);
         passwordEditText = findViewById(R.id.password_edittext);
@@ -30,12 +37,23 @@ public class LogonActivity extends AppCompatActivity {
                 String username = usernameEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
 
-                if (username.equals("example_user") && password.equals("example_password")) {
-                    Toast.makeText(LogonActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                    // Start the main activity or do something else after successful login
+                SQLiteDatabase db = dbHP.getReadableDatabase();
+
+                String[] projection = {"username"};
+                String selection = "username = ? AND password = ?";
+                String[] selectionArgs = {username, password};
+
+                Cursor cursor = db.query("users", projection, selection, selectionArgs, null, null, null);
+                if (cursor.getCount() > 0) {
+                    Toast.makeText(LogonActivity.this, "ALERT: Logon was successful.Redirecting...", Toast.LENGTH_SHORT).show();
+                    // ON SUCCESSFUL LOGIN: Redirect to the home page to show the bike renting locations
+                    startActivity(new Intent(LogonActivity.this, FindLocationsActivity.class));
                 } else {
-                    Toast.makeText(LogonActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LogonActivity.this, "ALERT: You have entered an invalid username or password", Toast.LENGTH_SHORT).show();
                 }
+                cursor.close();
+                db.close();
+
             }
         });
     }
