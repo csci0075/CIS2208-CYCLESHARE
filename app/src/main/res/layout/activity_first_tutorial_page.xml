@@ -72,7 +72,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="160dp"
-        android:text="Use the interactive map to find your desired location!"
+        android:text="Use the locations list to find the available locations!"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="15sp"

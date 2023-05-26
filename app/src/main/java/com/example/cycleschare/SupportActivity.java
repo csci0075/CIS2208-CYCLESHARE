@@ -21,6 +21,7 @@ public class SupportActivity extends AppCompatActivity {
 
         logoff_button.setText("\uD83D\uDCF4");
 
+        // ON CLICK: Logs the user off/out
         logoff_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,6 +45,7 @@ public class SupportActivity extends AppCompatActivity {
             }
         });
 
+        // ON CLICK: Runs the submitEmail() function
         Button submitButton = findViewById(R.id.request_support);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +53,6 @@ public class SupportActivity extends AppCompatActivity {
                 submitEmail(vw);
             }
         });
-
     }
     public void submitEmail(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);

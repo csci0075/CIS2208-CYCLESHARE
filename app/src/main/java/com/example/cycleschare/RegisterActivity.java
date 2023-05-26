@@ -30,7 +30,9 @@ public class RegisterActivity extends AppCompatActivity {
         usernameEditText = findViewById(R.id.username_input);
         passwordEditText = findViewById(R.id.password_input);
         confirmPasswordEditText = findViewById(R.id.confirm_password_input);
+
         register_button = findViewById(R.id.self_register_button);
+        Button goToLogon = findViewById(R.id.go_to_logon_button);
 
         register_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +63,12 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                     db.close();
                 }
+            }
+        });
+        // ON CLICK: Redirect to Registration Page
+        goToLogon.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(RegisterActivity.this, RegisterActivity.class));
             }
         });
     }
