@@ -15,14 +15,12 @@ public class DBHP extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Create the necessary tables
+        // Create the required tables
         String createUserTableQuery = "CREATE TABLE users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, password TEXT)";
         db.execSQL(createUserTableQuery);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Handle database upgrades if needed
-        // Here, you can implement logic to migrate data from the old version to the new version if necessary
     }
 }
