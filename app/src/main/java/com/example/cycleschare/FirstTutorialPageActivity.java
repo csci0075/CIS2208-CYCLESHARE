@@ -27,6 +27,7 @@ public class FirstTutorialPageActivity extends AppCompatActivity {
         TextView PageTitle = findViewById(R.id.PageTitle);
 
         TextView EmojiOne = findViewById(R.id.PageBodyEmojiOne);
+        // [6] Tutorial on how to set text: https://developer.android.com/reference/android/widget/TextView
         EmojiOne.setText("\uD83D\uDEB2"); // Sets text to bike emoji
 
         TextView EmojiTwo = findViewById(R.id.PageBodyEmojiTwo);
@@ -34,8 +35,6 @@ public class FirstTutorialPageActivity extends AppCompatActivity {
 
         TextView BodyTextOne = findViewById(R.id.PageBodyTextOne);
         TextView BodyTextTwo = findViewById(R.id.PageBodyTextTwo);
-
-        TextView PricingText = findViewById(R.id.PageBodyTextThree);
 
         // ON CLICK: Continue Tutorial
         Button continue_button = findViewById(R.id.continue_button);
