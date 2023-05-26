@@ -72,7 +72,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="160dp"
-        android:text="Fill in the form to contact support in case of any issues"
+        android:text="Contact via email in case of any issues or questions"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="15sp"
